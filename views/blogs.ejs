@@ -1,0 +1,24 @@
+<%-include("partials/header.ejs")%>
+
+<div class="blogs">
+
+    
+        <%for(let i=0;i<title.length;i++){%>
+            
+            <div class="blog">
+                <h1><%=title[i]%></h1>
+                <p><%=content[i]%></p></div>
+         
+        <%}%>
+    </div>
+
+     
+   
+    
+    
+
+</div>
+
+
+
+<%-include("partials/footer.ejs")%>
