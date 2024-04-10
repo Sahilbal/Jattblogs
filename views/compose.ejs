@@ -1,0 +1,26 @@
+<%-include("partials/header.ejs")%>
+
+<div class="content">
+    <div class="compose-content">
+
+      <form action="/blogs" method="post">
+        <div class="title">
+          <label for="title" id="titleLabel">Title:</label>
+          <input type="text" id="titleinput" name="title" required autofocus maxlength="100">
+        </div> 
+
+        <div class="contentdescription">
+          <label for="content" id="labelContent">Content:</label>
+          <textarea name="content" id="labelcontent" cols="30" rows="10" required></textarea>
+        </div>
+
+        <div class="btns">
+          <button type="submit" id="btns">Send</button>
+          <button type="reset" id="btns">Reset</button>
+        </div>
+       </form>
+    </div>
+</div>
+
+
+<%-include("partials/footer.ejs")%>
